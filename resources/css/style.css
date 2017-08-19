@@ -232,6 +232,7 @@ nav span {
 .large-thumbnail__text-container {
   background-color: red;
   padding-bottom: 2rem;
+  margin: auto 0;
 }
 
 .large-thumbnail__text-container h2 {
