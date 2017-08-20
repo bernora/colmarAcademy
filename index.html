@@ -7,168 +7,237 @@
   </head>
   <body>
 
-<!-- Navigation bar starts -->
+  <!-- Navigation bar starts -->
 
-  <div class="navbar row--spacebetween">
-    <div class="logo row--middle--start">
-      <img src="./resources/images/ic-logo.svg" />
-      <span>Colmar</span>
-      <span>Academy</span>
+    <div class="navbar row--spacebetween">
+      <div class="logo row--middle--start">
+        <img src="./resources/images/ic-logo.svg" />
+        <span>Colmar</span>
+        <span>Academy</span>
+      </div>
+      <nav>
+        <span><a href="#">On campus</a></span>
+        <span><a href="#">Online</a></span>
+        <span><a href="#">For companies</a></span>
+        <span><a href="#">Sign in</a></span>
+      </nav>
     </div>
-    <nav>
-      <span><a href="#">On campus</a></span>
-      <span><a href="#">Online</a></span>
-      <span><a href="#">For companies</a></span>
-      <span><a href="#">Sign in</a></span>
+
+  <!-- Navigation bar finishes -->
+
+  <!-- Hero section starts -->
+
+    <div class="container-main background--dark row--top--center" id="hero">
+      <div class="container-primary container-img">
+        <img class="img-large" src="./resources/images/banner.jpg" alt="Learning">
+      </div>
+      <div class="container-secondary column--start--space-between">
+        <div class="hero-description">
+          <h1 class="title-main">Learn something new everyday</h1>
+          <h2 class="title-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+          <a class="button" href="#">Start here</a>
+        </div>
+      </div>
+    </div>
+
+  <!-- Hero section ends -->
+
+  <!-- Information section starts -->
+
+    <div class="container-main row--top--center">
+
+      <!-- Large thumbnail starts-->
+
+      <div class="container-primary column--space-between">
+        <div class="container-img">
+          <img class="img-large" src="./resources/images/information-main.jpg" alt="">
+        </div>
+        <div class="large-thumbnail__text-container">
+          <h2 class="large-thumbnail__title">It doesn't hurt to keep practicing</h2>
+          <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+          <p>Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+      </div>
+
+      <!-- Large thumbnail ends-->
+
+      <!-- Three list-item start -->
+
+      <div class="container-secondary list-item__container column--start--space-between" id="info-section">
+
+        <div class="list-item row--middle--start">
+          <img class="list-item__image" src="./resources/images/information-orientation.jpg" alt="Orientation" />
+          <div class="list-item__text-container column--start--space-between">
+            <h3 class="list-item__text-container__title">Orientation date<h3>
+            <p class="list-item__text-container__text">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+            <a class="list-item__text-container__link" href="#">Read more</a>
+          </div>
+        </div>
+
+        <div class="list-item row--middle--start">
+          <img class="list-item__image" src="resources/images/information-campus.jpg" alt="Our Campus" />
+          <div class="list-item__text-container column--start--space-between">
+            <h3 class="list-item__text-container__title">Our campus<h3>
+            <p class="list-item__text-container__text">Find which campus is close by you</p>
+            <a class="list-item__text-container__link" href="#">Read more</a>
+          </div>
+        </div>
+
+        <div class="list-item row--middle--start">
+          <img class="list-item__image" src="resources/images/information-guest-lecture.jpg" alt="Guest Lecture" />
+          <div class="list-item__text-container column--start--space-between">
+            <h3 class="list-item__text-container__title">Our guest lecture<h3>
+            <p class="list-item__text-container__text">Join a keynote with Oliver Sack about music in medical treatment</p>
+            <a class="list-item__text-container__link" href="#">Read more</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Three list-item end -->
+
+    </div>
+
+  <!-- Information section ends -->
+
+  <!-- Start Learning grid starts -->
+
+    <div class="container-grid">
+
+      <h2 class="section-title">Start learning</h2>
+
+      <div class="grid background--dark">
+
+        <div class="grid-item column--right--top background--light">
+          <img class="grid-item__img" src="./resources/images/course-software.jpg" alt="Software engineering" />
+          <div class="gid-item__description">
+            <h3 class="grid-item__title">Software engineering</h3>
+            <p class="grid-item__label">Courses</p>
+            <p class="grid-item__detail">Web Development, Mobile, Development, iOT, APIs</p>
+          </div>
+        </div>
+
+        <div class="grid-item column--right--top background--light">
+          <img class="grid-item__img" src="./resources/images/course-computer-art.jpg" alt="Computer Art" />
+          <div class="gid-item__description">
+            <h3 class="grid-item__title">Computer art</h3>
+            <p class="grid-item__label">Courses</p>
+            <p class="grid-item__detail">Imaging &amp; Design, Wen Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+          </div>
+        </div>
+
+        <div class="grid-item column--right--top background--light">
+          <img class="grid-item__img" src="./resources/images/course-design.jpg" alt="Design" />
+          <div class="gid-item__description">
+            <h3 class="grid-item__title">Design</h3>
+            <p class="grid-item__label">Courses</p>
+            <p class="grid-item__detail">User Experience Design, User Research, Visual Design</p>
+          </div>
+        </div>
+
+        <div class="grid-item column--right--top background--light">
+          <img class="grid-item__img" src="./resources/images/course-data.jpg" alt="Data" />
+          <div class="gid-item__description">
+            <h3 class="grid-item__title">Data</h3>
+            <p class="grid-item__label">Courses</p>
+            <p class="grid-item__detail">Data Science, Big Data, SQL, Data Visualisation</p>
+          </div>
+        </div>
+
+        <div class="grid-item column--right--top background--light">
+          <img class="grid-item__img" src="./resources/images/course-business.jpg" alt="Business" />
+          <div class="gid-item__description">
+            <h3 class="grid-item__title">Business</h3>
+            <p class="grid-item__label">Courses</p>
+            <p class="grid-item__detail">Product Development, Business Development, Startup</p>
+          </div>
+        </div>
+
+        <div class="grid-item column--right--top background--light">
+          <img class="grid-item__img" src="./resources/images/course-marketing.jpg" alt="Marketing" />
+          <div class="gid-item__description">
+            <h3 class="grid-item__title">Marketing</h3>
+            <p class="grid-item__label">Courses</p>
+            <p class="grid-item__detail">Analytics, Content Marketing, Mobile Marketing</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  <!-- Start Learning grid ends -->
+
+  <!-- Thesis exhibit section starts -->
+
+  <div class="container-main" id="thesis-exhibit">
+
+    <h2 class="section-title">Thesis exhibit</h2>
+
+    <div class="row--top--center">
+
+      <!-- Video thumbnail starts-->
+
+      <div class="container-primary column--space-between">
+
+        <div class="container-video">
+          <video  width="100%" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="video-thumbnail__text-container">
+          <h2 class="video-thumbnail__title">Reimagine urban</h2>
+          <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+        </div>
+
+      </div>
+
+      <!-- Video thumbnail ends-->
+
+      <!-- List-items start -->
+
+      <div class="container-secondary column--start--space-between">
+
+        <div class="list-item--no-border row--middle--start">
+          <img class="list-item__image" src="./resources/images/thesis-fisma.jpg" alt="Fisma: Design and Prototype" />
+          <div class="list-item__text-container column--start--space-between">
+            <h3 class="list-item__text-container__title">Fisma: Design and Prototype<h3>
+            <p class="list-item__text-container__text">Designer showcase of new prototype product</p>
+          </div>
+        </div>
+
+        <div class="list-item--no-border row--middle--start">
+          <img class="list-item__image" src="./resources/images/thesis-now-and-then.jpg" alt="Now and then" />
+          <div class="list-item__text-container column--start--space-between">
+            <h3 class="list-item__text-container__title">Now and then<h3>
+            <p class="list-item__text-container__text">Research study about New York</p>
+          </div>
+        </div>
+
+      </div>
+
+    <!-- Three list-items end -->
+
+    </div>
+
+  </div>
+
+  <!-- Thesis exhibit section ends -->
+
+  <!--Footer section starts-->
+
+  <footer class="row--spacebetween">
+    <span>2016 Colmar Academy. All rights reserved</span>
+    <nav class="row">
+      <span>Terms</span>
+      <span>Privacy</span>
     </nav>
-  </div>
+  </footer>
 
-<!-- Navigation bar finishes -->
-
-<!-- Hero section starts -->
-
-  <div class="container-main background--dark row--top--center">
-    <div class="container-primary container-img">
-      <img class="img-large" src="./resources/images/banner.jpg" alt="">
-    </div>
-    <div class="container-secondary column--start--space-between">
-      <div class="hero-description">
-        <h1 class="title-main">Learn something new everyday</h1>
-        <h2 class="title-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-        <a class="button" href="#">Start here</a>
-      </div>
-    </div>
-  </div>
-
-<!-- Hero section ends -->
-
-<!-- Information section starts -->
-
-  <div class="container-main row--top--center">
-
-    <!-- Large thumbnail starts-->
-
-    <div class="container-primary column--space-between">
-      <div class="container-img">
-        <img class="img-large" src="./resources/images/information-main.jpg" alt="">
-      </div>
-
-      <div class="large-thumbnail__text-container">
-        <h2 class="">It doesn't hurt to keep practicing</h2>
-        <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
-        <p>Emanuel, Sr Strategist at Hiring.com</p>
-      </div>
-
-    </div>
-
-    <!-- Three list-item starts -->
-
-    <div class="container-secondary column--start--space-between" id="info-section">
-
-      <div class="list-item row--top--start">
-        <img class="list-item__image" src="./resources/images/information-orientation.jpg" alt="Orientation" />
-        <div class="list-item__text-container column--start--space-between">
-          <h3 class="list-item__text-container__title">Orientation date<h3>
-          <p class="list-item__text-container__text">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-          <a class="list-item__text-container__link" href="#">Read more</a>
-        </div>
-      </div>
-
-      <div class="list-item row--top--start">
-        <img class="list-item__image" src="resources/images/information-campus.jpg" alt="Our Campus" />
-        <div class="list-item__text-container column--start--space-between">
-          <h3 class="list-item__text-container__title">Our campus<h3>
-          <p class="list-item__text-container__text">Find which campus is close by you</p>
-          <a class="list-item__text-container__link" href="#">Read more</a>
-        </div>
-      </div>
-
-      <div class="list-item row--top--start">
-        <img class="list-item__image" src="resources/images/information-guest-lecture.jpg" alt="Guest Lecture" />
-        <div class="list-item__text-container column--start--space-between">
-          <h3 class="list-item__text-container__title">Our guest lecture<h3>
-          <p class="list-item__text-container__text">Join a keynote with Oliver Sack about music in medical treatment</p>
-          <a class="list-item__text-container__link" href="#">Read more</a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Three list-item ends -->
-
-  </div>
-
-<!-- Information section ends -->
-
-<!-- Start Learning grid starts -->
-
-  <div class="container-grid">
-
-    <h2 class="section-title">Start learning</h2>
-
-    <div class="grid background--dark">
-
-      <div class="grid-item column--right--top background--light">
-        <img class="grid-item__img" src="./resources/images/course-software.jpg" alt="Software engineering" />
-        <div class="gid-item__description">
-          <h3 class="grid-item__title">Software engineering</h3>
-          <p class="grid-item__label">Courses</p>
-          <p class="grid-item__detail">Web Development, Mobile, Development, iOT, APIs</p>
-        </div>
-      </div>
-
-      <div class="grid-item column--right--top background--light">
-        <img class="grid-item__img" src="./resources/images/course-computer-art.jpg" alt="Computer Art" />
-        <div class="gid-item__description">
-          <h3 class="grid-item__title">Computer art</h3>
-          <p class="grid-item__label">Courses</p>
-          <p class="grid-item__detail">Imaging &amp; Design, Wen Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
-        </div>
-      </div>
-
-      <div class="grid-item column--right--top background--light">
-        <img class="grid-item__img" src="./resources/images/course-design.jpg" alt="Design" />
-        <div class="gid-item__description">
-          <h3 class="grid-item__title">Design</h3>
-          <p class="grid-item__label">Courses</p>
-          <p class="grid-item__detail">User Experience Design, User Research, Visual Design</p>
-        </div>
-      </div>
-
-      <div class="grid-item column--right--top background--light">
-        <img class="grid-item__img" src="./resources/images/course-data.jpg" alt="Data" />
-        <div class="gid-item__description">
-          <h3 class="grid-item__title">Data</h3>
-          <p class="grid-item__label">Courses</p>
-          <p class="grid-item__detail">Data Science, Big Data, SQL, Data Visualisation</p>
-        </div>
-      </div>
-
-      <div class="grid-item column--right--top background--light">
-        <img class="grid-item__img" src="./resources/images/course-business.jpg" alt="Business" />
-        <div class="gid-item__description">
-          <h3 class="grid-item__title">Business</h3>
-          <p class="grid-item__label">Courses</p>
-          <p class="grid-item__detail">Product Development, Business Development, Startup</p>
-        </div>
-      </div>
-
-      <div class="grid-item column--right--top background--light">
-        <img class="grid-item__img" src="./resources/images/course-marketing.jpg" alt="Marketing" />
-        <div class="gid-item__description">
-          <h3 class="grid-item__title">Marketing</h3>
-          <p class="grid-item__label">Courses</p>
-          <p class="grid-item__detail">Analytics, Content Marketing, Mobile Marketing</p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-<!-- Start Learning grid ends -->
-
-
+  <!--Footer section ends-->
 
 
 

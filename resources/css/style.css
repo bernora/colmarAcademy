@@ -31,12 +31,10 @@ a {
 .container-primary {
   width: 60%;
   padding-right: 1.5rem;
-  background-color: green;
 }
 
 .container-secondary {
   width: 40%;
-  margin: auto 0;
 }
 
 .container-img {
@@ -189,6 +187,10 @@ nav span {
 
 /* Hero section stying */
 
+#hero .container-secondary {
+    margin: auto 0;
+}
+
 .hero-description {
   padding-right: 20%;
 }
@@ -210,23 +212,19 @@ nav span {
 
 /* List Item Stying */
 
-.list-item {
-  padding: 1rem;
-  border: 2px solid grey;
-}
-
-#info-section div:first-child {
+.list-item__container div:first-child {
   padding-top: 2rem;
   border-top: 0;
 }
 
-#info-section div:last-child {
+.list-item__container div:last-child {
   padding-bottom: 2rem;
   border-bottom: 0;
 }
 
-#info-section div:nth-child(3n+0) {
-  background-color: pink;
+.list-item {
+  padding: 1rem;
+  border: 2px solid grey;
 }
 
 .list-item__image {
@@ -243,13 +241,11 @@ nav span {
     padding: 1rem 0;
 }
 
-/* Large thumbnail styling */
-
-.large-thumbnail__text-container {
-  background-color: red;
-  padding-bottom: 2rem;
-  margin: auto 0;
+#info-section div:nth-child(3n+0) {
+  background-color: pink;
 }
+
+/* Large thumbnail styling */
 
 .large-thumbnail__text-container h2 {
   padding-bottom: 1.5rem;
@@ -280,4 +276,37 @@ nav span {
   height: auto;
 }
 
-.
+/*Thesis exhibit section styling */
+
+.video-thumbnail__title {
+  padding-bottom: 0.5rem;
+}
+
+video {
+  background-image: url(../images/video_placeholder.jpg);
+  background-position: center;
+}
+
+.container-video {
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.list-item--no-border {
+  padding: 1rem;
+  border: 0;
+}
+
+#thesis-exhibit .container-secondary div:last-child {
+  background-color: pink;
+}
+
+/*Footer styling*/
+
+footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid grey;
+  margin-top: 1.5rem;
+}
