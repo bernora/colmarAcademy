@@ -10,12 +10,18 @@ a {
   color: inherit;
 }
 
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .title-main {
   font-size: 3rem;
 }
 
 .title-secondary {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .container-main {
@@ -48,6 +54,9 @@ a {
   background-color: pink;
 }
 
+.background--light {
+  background-color: white;
+}
 
 /* Flexbox generic stying*/
 
@@ -127,6 +136,13 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+
+.column--right--top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .column--right--space-between {
@@ -238,3 +254,30 @@ nav span {
 .large-thumbnail__text-container h2 {
   padding-bottom: 1.5rem;
 }
+
+/* Grid section styling */
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 2.5rem 0 4.5rem;
+}
+
+.grid-item {
+  width: 31.8%;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gid-item__description {
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+
+.
