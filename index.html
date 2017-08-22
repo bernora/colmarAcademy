@@ -29,10 +29,10 @@
   <!-- Hero section starts -->
 
     <div class="background--dark font--light row--top--center">
-      <div class="hero-main-content">
+      <div class="content-main">
         <img class="hero-main-content__img" src="./resources/images/banner.jpg" alt="Learning">
       </div>
-      <div class="hero-sidebar column--start--space-between">
+      <div class="side-bar side-bar--middle column--start--space-between">
         <div class="hero-sidebar__description">
           <h1 class="title-first">Learn something new everyday</h1>
           <h2 class="title-third">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
@@ -45,17 +45,17 @@
 
   <!-- Information section starts -->
 
-    <div class="row--top--center">
+    <div class="row--top--center" id="info-section">
 
       <!-- Large thumbnail starts-->
 
       <div class="thumbnail-large column--spacebetween">
         <div class="img-holder">
-          <img class="thumbnail-large__img-holder__img" src="./resources/images/information-main.jpg" alt="">
+          <img class="img" src="./resources/images/information-main.jpg" alt="">
         </div>
         <div>
           <h2 class="thumbnail-large__title">It doesn't hurt to keep practicing</h2>
-          <p class="thumbnail-large__description">Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+          <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
           <p class="thumbnail-large__quote">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
       </div>
@@ -64,14 +64,14 @@
 
       <!-- Three list-item start -->
 
-      <div class="side-bar-list column--start--space-between">
+      <div class="side-bar side-bar--list column--start--space-between">
 
         <div class="list-item row--middle--start">
           <img class="list-item__image" src="./resources/images/information-orientation.jpg" alt="Orientation" />
           <div class="list-item__text-container column--start--space-between">
             <h3 class="title-third">Orientation date<h3>
             <p class="list-item__text-container__text">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-            <a class="list-item__text-container__link" href="#"><i class="list-item__text-container__link__icon fa fa-newspaper-o"></i>Read more</a>
+            <a class="list-item__text-container__link" href="#"><i class="fa fa-newspaper-o"></i>Read more</a>
           </div>
         </div>
 
@@ -80,16 +80,16 @@
           <div class="list-item__text-container column--start--space-between">
             <h3 class="title-third">Our campus<h3>
             <p class="list-item__text-container__text">Find which campus is close by you</p>
-            <a class="list-item__text-container__link" href="#"><i class="list-item__text-container__link__icon fa fa-newspaper-o"></i>Read more</a>
+            <a class="list-item__text-container__link" href="#"><i class="fa fa-newspaper-o"></i>Read more</a>
           </div>
         </div>
 
-        <div class="list-item list-item--promo row--middle--start">
+        <div class="list-item row--middle--start">
           <img class="list-item__image" src="resources/images/information-guest-lecture.jpg" alt="Guest Lecture" />
           <div class="list-item__text-container column--start--space-between">
             <h3 class="title-third">Our guest lecture<h3>
             <p class="list-item__text-container__text">Join a keynote with Oliver Sack about music in medical treatment</p>
-            <a class="list-item__text-container__link" href="#"><i class="list-item__text-container__link__icon fa fa-newspaper-o"></i>Read more</a>
+            <a class="list-item__text-container__link" href="#"><i class="fa fa-newspaper-o"></i>Read more</a>
           </div>
         </div>
 
@@ -171,27 +171,27 @@
 
   <!-- Thesis exhibit section starts -->
 
-  <div class="section--side-padding" id="thesis-exhibit">
+  <div id="thesis-exhibit">
 
-    <h2 class="title-second">Thesis exhibit</h2>
+    <h2 class="grid__title">Thesis exhibit</h2>
 
     <div class="row--top--center">
 
       <!-- Video thumbnail starts-->
 
-      <div class="content-main column--spacebetween">
+      <div class="thumbnail-large column--spacebetween">
 
-        <div class="container-video">
-          <video  width="100%" controls>
-            <source src="movie.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
+        <div class="img-holder">
+          <video poster="../images/video_placeholder.jpg" width="100%" controls>
+            <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4">
+            <source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type="video/ogg">
             Your browser does not support the video tag.
           </video>
         </div>
 
-        <div class="video-thumbnail__text-container">
-          <h2 class="title-third">Reimagine urban</h2>
-          <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+        <div>
+          <h2 class="title-third title-third--padding">Reimagine urban</h2>
+          <p class="thumbnail-large__description">Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
         </div>
 
       </div>
@@ -200,7 +200,7 @@
 
       <!-- List-items start -->
 
-      <div class="container-secondary column--start--space-between">
+      <div class="side-bar side-bar--list--no-boder side-bar side-bar--list--no-boder column--start--space-between">
 
         <div class="list-item--no-border row--middle--start">
           <img class="list-item__image" src="./resources/images/thesis-fisma.jpg" alt="Fisma: Design and Prototype" />
