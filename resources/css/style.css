@@ -19,6 +19,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  transition: opacity .5s;
 }
 
 img:hover {
@@ -221,6 +222,14 @@ nav span {
   border-left: 1px solid #231826;
 }
 
+.side-bar--list .list-item:hover h3 {
+  text-decoration: underline;
+}
+
+.side-bar--list .list-item:hover img {
+  opacity: .6;
+}
+
 .list-item {
   padding: 1rem;
   border-top: 1px solid #231826;
@@ -249,16 +258,16 @@ nav span {
     padding-right: 0.5rem;
 }
 
-#info-section .side-bar--list > div:first-child {
+#info-section .side-bar--list > :first-child {
   border-top: 0;
 }
 
-#info-section .side-bar--list > div:last-child {
+#info-section .side-bar--list > :last-child {
   background-color: #719BB2;
   color: white;
 }
 
-#info-section .side-bar--list a:last-child {
+#info-section .side-bar--list > :last-child a{
   color: white;
 }
 
