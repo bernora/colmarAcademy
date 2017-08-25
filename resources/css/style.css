@@ -206,14 +206,14 @@ nav span {
   line-height: 1.5rem;
 }
 
-.thumbnail-large__title {
+.thumbnail-large__description__title {
   font-size: 1.7rem;
   padding: 1.5rem 0;
   font-weight: bold;
   font-family: "Roboto Slab", Helvetica, Serif;
 }
 
-.thumbnail-large__quote {
+.thumbnail-large__description__quote {
   padding-top: 1.5rem;
   font-size: 0.8rem;
 }
@@ -252,6 +252,10 @@ nav span {
   padding-right: 1rem;
 }
 
+.list-item__image--mobile {
+  display: none;
+}
+
 .list-item__text-container {
   width: 65%;
 }
@@ -288,6 +292,10 @@ nav span {
 }
 
 /* Grid section styling */
+
+.grid--mobile {
+  display: none;
+}
 
 .grid {
   display: flex;
@@ -380,6 +388,24 @@ footer {
 
 @media (max-width: 900px){
 
+/* General styling changes */
+
+    .title-first {
+      font-size: 2rem;
+      padding: 0 1rem 1rem 0;
+      line-height: normal;
+    }
+
+    .title-third {
+      font-size: 1.1rem;
+    }
+
+    p{
+      font-size: 1rem;
+    }
+
+/* Amendments to the hero section */
+
   .side-bar--middle {
     margin: 0;
   }
@@ -388,22 +414,10 @@ footer {
     padding: 1.5rem 1.5rem 1.5rem 0 ;
   }
 
-  .title-first {
-    font-size: 2rem;
-    padding: 0 1rem 1rem 0;
-    line-height: normal;
-  }
-
-  .title-third {
-    font-size: 1.1rem;
-  }
+/*Changes to the grid*/
 
   .grid-item {
     width: 47%;
-  }
-
-  p{
-    font-size: 1rem;
   }
 
 }
@@ -412,11 +426,8 @@ footer {
 /*STYLING FOR TABLET PORTRAIT */
 
 @media (max-width: 768px) {
-  .list-item {
-    display: flex;
-    align-items: flex-start;
-    padding: 1rem;
-  }
+
+/*General styling changes*/
 
   p, span {
     font-size: .9rem;
@@ -428,6 +439,27 @@ footer {
     padding-bottom: 0.5rem;
   }
 
+  .title-first {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+
+/*Hero section*/
+
+  .button {
+    width: 80%;
+    margin-top: 2rem;
+  }
+
+/*Changes to the list items*/
+
+  .list-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
   .list-item__text-container__text {
     padding: 0.2rem 0;
     line-height: normal;
@@ -437,19 +469,15 @@ footer {
     display: none;
   }
 
-  .title-first {
-    font-size: 1.5rem;
-    line-height: 1.1;
+  .side-bar--list {
+    padding: 1rem 0;
   }
 
-  .title-third {
-    font-size: 1.1rem;
+  #info-section .side-bar--list > :last-child {
+    margin-bottom: 2.7rem;
   }
 
-  .button {
-    width: 80%;
-    margin-top: 2rem;
-  }
+/*Changes to the grid*/
 
   .grid-item {
     width: 46%;
@@ -467,14 +495,168 @@ footer {
     padding-top: 1.5rem;
   }
 
+}
+
+/*STYLING FOR MOBILE */
+
+@media (max-width: 590px) {
+
+/*General styling changes*/
+
+  .title-first {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+/*Changes to the navigation*/
+
+  nav span {
+    display: none;
+  }
+
+  nav span:after {
+
+  }
+
+/*Changes to the hero section*/
+
+  #hero-section {
+    flex-direction: column;
+  }
+
+  #hero-section .title-third {
+    padding-bottom: 1.5rem;
+  }
+
+  .content-main {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .hero-main-content__img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-sidebar__description {
+    width: initial;
+    padding: 2rem 1rem;
+  }
+
+  .side-bar {
+    width: initial;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .button {
+    box-sizing: border-box;
+    width: initial;
+    margin: 0;
+  }
+
+  #info-section .thumbnail-large {
+    display: none;
+  }
+
+  /*Changes to the information section and list items*/
+
   .side-bar--list {
-    padding: 1rem 0;
+    border: 0;
+  }
+
+  .list-item {
+    flex-direction: column;
+    border: 0;
+  }
+
+  .list-item .title-third {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  #thesis-exhibit .side-bar {
+    display: none;
+  }
+
+  .list-item__image--mobile {
+    display: initial;
+  }
+
+  .list-item__image {
+    display: none;
+  }
+
+  .list-item span, .list-item i {
+    display: initial;
+    color: #719BB2;
   }
 
   #info-section .side-bar--list > :last-child {
-      margin-bottom: 2.7rem;
+    background-color: initial;
+    color: initial;
+    margin: 0;
+    padding-bottom: 2rem;
+  }
+
+  .list-item {
+    padding: 2rem 1rem;
+    margin: 0;
+  }
+
+  .list-item__text-container {
+    width: initial;
+    padding: 1.5rem 1rem 0 1rem;
+  }
+
+  .list-item__text-container__text {
+    line-height: 1.5;
+    padding: 1rem 0;
+  }
+
+/*Changes to the grid*/
+
+  .grid {
+    display: none;
+  }
+
+  .grid--mobile {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .grid-item--mobile {
+    display: block;
+    margin-bottom: 0.3rem;
+    padding: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all .5s;
+  }
+
+  .grid-item--mobile:hover {
+    background-color: white;
+    color: #231826;
+  }
+
+  .grid__title {
+    padding: 2rem 0.5rem 1rem 0.5rem;
+    color: inherit;
+    background-color: inherit;
+    font-size: 2rem;
     }
 
+/* Changes to the thesis exhibit section */
+
+  .thumbnail-large {
+    width: initial;
+    padding: 0 1rem;
+  }
+
+  .thumbnail-large__description {
+    display: none;
   }
 
 }
