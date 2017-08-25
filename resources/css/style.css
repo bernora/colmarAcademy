@@ -202,6 +202,9 @@ nav span {
   padding: 2rem 1.5rem;
 }
 
+.thumbnail-large p {
+  line-height: 1.5rem;
+}
 
 .thumbnail-large__title {
   font-size: 1.7rem;
@@ -211,8 +214,16 @@ nav span {
 }
 
 .thumbnail-large__quote {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   font-size: 0.8rem;
+}
+
+.thumbnail-large:hover h2 {
+  text-decoration: underline;
+}
+
+.thumbnail-large:hover img {
+  opacity: 0.6;
 }
 
 /* List Item Sidebar Stying */
@@ -222,11 +233,11 @@ nav span {
   border-left: 1px solid #231826;
 }
 
-.side-bar--list .list-item:hover h3 {
+.list-item:hover h3 {
   text-decoration: underline;
 }
 
-.side-bar--list .list-item:hover img {
+.list-item:hover img {
   opacity: .6;
 }
 
@@ -247,6 +258,7 @@ nav span {
 
 .list-item__text-container__text {
     padding: 1rem 0;
+    line-height: 1.3rem;
 }
 
 .list-item__text-container__link {
@@ -260,6 +272,10 @@ nav span {
 
 #info-section .side-bar--list > :first-child {
   border-top: 0;
+}
+
+#info-section .side-bar--list > :last-child {
+  margin-bottom: 1.2rem;
 }
 
 #info-section .side-bar--list > :last-child {
@@ -313,6 +329,14 @@ nav span {
   height: auto;
 }
 
+.grid-item:hover h3 {
+  text-decoration: underline;
+}
+
+.grid-item:hover img {
+  opacity: .6;
+}
+
 /*Thesis exhibit section styling */
 
 .side-bar--list--no-boder {
@@ -346,4 +370,6 @@ footer {
   border-top: 1px solid grey;
   margin-top: 1.5rem;
   font: 0.5rem;
+  background-color: black;
+  color: white;
 }
