@@ -349,6 +349,7 @@ nav span {
 
 .side-bar--list--no-boder {
   border: 0;
+  padding-top: 1rem;
 }
 
 .title-third--padding {
@@ -361,7 +362,7 @@ video {
 }
 
 .list-item--no-border {
-  padding: 1rem;
+  padding-top: 1rem;
   border: 0;
 }
 
