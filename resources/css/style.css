@@ -22,8 +22,8 @@ img {
   transition: opacity .5s;
 }
 
-img:hover {
-  opacity: 0.6;
+h3 h2 {
+  transition: text-decoration .5s;
 }
 
 /*Titles*/
@@ -257,8 +257,8 @@ nav span {
 }
 
 .list-item__text-container__text {
-    padding: 1rem 0;
-    line-height: 1.3rem;
+  padding: 1rem 0;
+  line-height: 1.3rem;
 }
 
 .list-item__text-container__link {
@@ -372,4 +372,109 @@ footer {
   font: 0.5rem;
   background-color: black;
   color: white;
+}
+
+/*===================================================================================================================================*/
+
+/*STYLING FOR TABLET LANDSCAPE */
+
+@media (max-width: 900px){
+
+  .side-bar--middle {
+    margin: 0;
+  }
+
+  .hero-sidebar__description {
+    padding: 1.5rem 1.5rem 1.5rem 0 ;
+  }
+
+  .title-first {
+    font-size: 2rem;
+    padding: 0 1rem 1rem 0;
+    line-height: normal;
+  }
+
+  .title-third {
+    font-size: 1.1rem;
+  }
+
+  .grid-item {
+    width: 47%;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+
+}
+
+
+/*STYLING FOR TABLET PORTRAIT */
+
+@media (max-width: 768px) {
+  .list-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  p, span {
+    font-size: .9rem;
+  }
+
+  .title-third {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .list-item__text-container__text {
+    padding: 0.2rem 0;
+    line-height: normal;
+  }
+
+  .list-item span, .list-item i {
+    display: none;
+  }
+
+  .title-first {
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+
+  .title-third {
+    font-size: 1.1rem;
+  }
+
+  .button {
+    width: 80%;
+    margin-top: 2rem;
+  }
+
+  .grid-item {
+    width: 46%;
+  }
+
+  .grid-item__label {
+    padding: 0.1rem 0;
+  }
+
+  .grid {
+    padding: 1.5rem;
+  }
+
+  .grid__title {
+    padding-top: 1.5rem;
+  }
+
+  .side-bar--list {
+    padding: 1rem 0;
+  }
+
+  #info-section .side-bar--list > :last-child {
+      margin-bottom: 2.7rem;
+    }
+
+  }
+
 }
