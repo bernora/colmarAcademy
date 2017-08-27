@@ -84,6 +84,14 @@ h3 h2 {
   align-items: center;
 }
 
+.row--strech {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+}
+
 .row--top--center {
   display: flex;
   flex-direction: row;
@@ -159,10 +167,18 @@ nav span {
   padding-left: 1rem;
 }
 
+.navbar--mobile {
+  display: none;
+}
+
 /* Hero section stying */
 
-.hero-main-content__img {
+.container {
   padding: 2rem 1.5rem;
+}
+
+.hero-main-content__img {
+  padding-right: 1.5rem;
 }
 
 .side-bar--middle {
@@ -185,6 +201,8 @@ nav span {
   text-align: center;
   font-weight: bold;
   border: 2px solid #231826;
+  transition: all .5s;
+
 }
 
 .button:hover {
@@ -276,10 +294,6 @@ nav span {
 
 #info-section .side-bar--list > :first-child {
   border-top: 0;
-}
-
-#info-section .side-bar--list > :last-child {
-  margin-bottom: 1.2rem;
 }
 
 #info-section .side-bar--list > :last-child {
@@ -424,9 +438,11 @@ footer {
 }
 
 
+/*===================================================================================================================================*/
+
 /*STYLING FOR TABLET PORTRAIT */
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
 
 /*General styling changes*/
 
@@ -474,9 +490,6 @@ footer {
     padding: 1rem 0;
   }
 
-  #info-section .side-bar--list > :last-child {
-    margin-bottom: 2.7rem;
-  }
 
 /*Changes to the grid*/
 
@@ -498,6 +511,9 @@ footer {
 
 }
 
+
+/*===================================================================================================================================*/
+
 /*STYLING FOR MOBILE */
 
 @media (max-width: 590px) {
@@ -505,19 +521,29 @@ footer {
 /*General styling changes*/
 
   .title-first {
-    font-size: 3rem;
+    font-size: 2.7rem;
     padding-bottom: 2rem;
   }
 
 /*Changes to the navigation*/
 
-  nav span {
+body {
+  padding: 0;
+}
+
+nav span {
+  display: none;
+}
+
+.navbar {
     display: none;
   }
 
-  nav span:after {
-
-  }
+.navbar--mobile {
+    display: flex;
+    height: 3rem;
+    padding: 0 2rem;
+}
 
 /*Changes to the hero section*/
 
@@ -526,7 +552,11 @@ footer {
   }
 
   #hero-section .title-third {
-    padding-bottom: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .title-first {
+    font-size: 2rem;
   }
 
   .content-main {
@@ -543,7 +573,7 @@ footer {
 
   .hero-sidebar__description {
     width: initial;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0 1rem;
   }
 
   .side-bar {
