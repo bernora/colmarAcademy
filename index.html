@@ -18,11 +18,11 @@
   <!-- NAVIGATION SECTION STARTS -->
 
     <header class="navbar row--spacebetween">
-      <div class="logo row--middle--start">
-        <img src="./resources/images/ic-logo.svg" />
+      <a class="logo row--middle--start" href="#">
+        <img src="./resources/images/ic-logo.svg" alt="Home"/>
         <span>Colmar</span>
         <span>Academy</span>
-      </div>
+      </a>
       <nav>
         <span><a href="#">On campus</a></span>
         <span><a href="#">Online</a></span>
@@ -34,10 +34,10 @@
     <!-- Navigation markup for ***mobile*** starts-->
 
     <nav class="navbar--mobile row--spacebetween">
-      <img src="./resources/images/ic-logo.svg" alt="Home"/>
-      <img src="./resources/images/ic-on-campus.svg" alt="On campus"/>
-      <img src="./resources/images/ic-online.svg" alt="Online"/>
-      <img src="./resources/images/ic-login.svg" alt="Login" />
+      <a href="#"><img src="./resources/images/ic-logo.svg" alt="Home"/></a>
+      <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On campus"/></a>
+      <a href="#"><img src="./resources/images/ic-online.svg" alt="Online"/></a>
+      <a href="#"><img src="./resources/images/ic-login.svg" alt="Login" /></a>
     </nav>
 
     <!-- Navigation markup for ***mobile*** ends-->
@@ -47,12 +47,12 @@
 
   <!-- HERO SECTION STARTS -->
 
-    <div class="container background--dark font--light row--strech" id="hero-section">
-      <div class="content-main">
-        <a href="#"><img class="hero-main-content__img" src="./resources/images/banner.jpg" alt="Learning"></a>
+    <div class="container background--dark font--light row--strech" id="hero-section" role="presentation">
+      <div class="content-main" role="presentation">
+        <a href="#"><img class="hero-main-content__img" src="./resources/images/banner.jpg" alt="Students studying"></a>
       </div>
-      <div class="side-bar side-bar--middle column--start--space-between">
-        <div class="hero-sidebar__description">
+      <div class="side-bar side-bar--middle column--start--space-between" role="presentation">
+        <div class="hero-sidebar__description" role="presentation">
           <h1 class="title-first"><a href="#">Learn something new everyday</a></h1>
           <h2 class="title-third">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
           <a class="button" href="#">Start here</a>
@@ -65,15 +65,15 @@
 
   <!-- INFO SECTION STARTS -->
 
-    <div class="row--strech" id="info-section">
+    <div class="row--strech" id="info-section" role="presentation">
 
       <!-- Large thumbnail starts-->
 
       <a href="#" class="thumbnail-large column--spacebetween">
-        <div class="img-holder">
-          <img class="img" src="./resources/images/information-main.jpg" alt="" />
+        <div class="img-holder" role="presentation">
+          <img class="img" src="./resources/images/information-main.jpg" alt="Smiling student reading a book" />
         </div>
-        <div class="thumbnail-large__description">
+        <div class="thumbnail-large__description" role="presentation">
           <h2 class="thumbnail-large__description__title">It doesn't hurt to keep practicing</h2>
           <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
           <p class="thumbnail-large__description__quote">Emanuel, Sr Strategist at Hiring.com</p>
@@ -84,12 +84,12 @@
 
       <!-- Three list-item start -->
 
-      <div class="side-bar side-bar--list column--start--space-between">
+      <div class="side-bar side-bar--list column--start--space-between" role="presentation">
 
         <a href="#" class="list-item row--middle--start">
-          <img class="list-item__image" src="./resources/images/information-orientation.jpg" alt="Orientation" />
-          <img class="list-item__image--mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Orientation" />
-          <div class="list-item__text-container column--start--space-between">
+          <img class="list-item__image" src="./resources/images/information-orientation.jpg" alt="Students walking down a path" />
+          <img class="list-item__image--mobile" src="./resources/images/information-orientation-mobile.jpg" alt="Students walking down a path" />
+          <div class="list-item__text-container column--start--space-between" role="presentation">
             <h3 class="title-third">Orientation date</h3>
             <p class="list-item__text-container__text">Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
             <i class="fa fa-newspaper-o"></i><span>Read more</span>
@@ -97,9 +97,9 @@
         </a>
 
         <a href="#" class="list-item row--middle--start">
-          <img class="list-item__image" src="./resources/images/information-campus.jpg" alt="Our Campus" />
-          <img class="list-item__image--mobile" src="./resources/images/information-campus-mobile.jpg" alt="Our Campus" />
-          <div class="list-item__text-container column--start--space-between">
+          <img class="list-item__image" src="./resources/images/information-campus.jpg" alt="A photo of our classroom" />
+          <img class="list-item__image--mobile" src="./resources/images/information-campus-mobile.jpg" alt="A photo of our classroom" />
+          <div class="list-item__text-container column--start--space-between" role="presentation">
             <h3 class="title-third">Our campus</h3>
             <p class="list-item__text-container__text">Find which campus is close by you</p>
             <i class="fa fa-newspaper-o"></i><span>Read more</span>
@@ -107,9 +107,9 @@
         </a>
 
         <a href="#" class="list-item row--middle--start">
-          <img class="list-item__image" src="./resources/images/information-guest-lecture.jpg" alt="Guest Lecture" />
-          <img class="list-item__image--mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="Guest Lecture" />
-          <div class="list-item__text-container column--start--space-between">
+          <img class="list-item__image" src="./resources/images/information-guest-lecture.jpg" alt="A photo of Oliver Sack" />
+          <img class="list-item__image--mobile" src="./resources/images/information-guest-lecture-mobile.jpg" alt="A photo of Oliver Sack" />
+          <div class="list-item__text-container column--start--space-between" role="presentation">
             <h3 class="title-third">Our guest lecture</h3>
             <p class="list-item__text-container__text">Join a keynote with Oliver Sack about music in medical treatment</p>
             <i class="fa fa-newspaper-o"></i><span>Read more</span>
@@ -129,14 +129,14 @@
 
     <!-- Grid markup for desktop starts -->
 
-    <div class="container-grid" id="start-learning-grid">
+    <div class="container-grid" id="start-learning-grid" role="presentation">
 
       <h2 class="grid__title font--light background--dark">Start learning</h2>
 
-      <div class="grid background--dark">
+      <div class="grid background--dark" role="presentation">
 
         <a href="#" class="grid-item column--right--top background--light">
-          <img class="grid-item__img" src="./resources/images/course-software.jpg" alt="Software engineering" />
+          <img class="grid-item__img" src="./resources/images/course-software.jpg" alt="A desk with a computer" />
           <div class="gid-item__description">
             <h3 class="title-third">Software engineering</h3>
             <p class="grid-item__label">Courses</p>
@@ -145,7 +145,7 @@
         </a>
 
         <a href="#" class="grid-item column--right--top background--light">
-          <img class="grid-item__img" src="./resources/images/course-computer-art.jpg" alt="Computer Art" />
+          <img class="grid-item__img" src="./resources/images/course-computer-art.jpg" alt="A hand holding a mobile phone" />
           <div class="gid-item__description">
             <h3 class="title-third">Computer art</h3>
             <p class="grid-item__label">Courses</p>
@@ -154,7 +154,7 @@
         </a>
 
         <a href="#" class="grid-item column--right--top background--light">
-          <img class="grid-item__img" src="./resources/images/course-design.jpg" alt="Design" />
+          <img class="grid-item__img" src="./resources/images/course-design.jpg" alt="A student taking a picture with an old camera" />
           <div class="gid-item__description">
             <h3 class="title-third">Design</h3>
             <p class="grid-item__label">Courses</p>
@@ -163,7 +163,7 @@
         </a>
 
         <a href="#" class="grid-item column--right--top background--light">
-          <img class="grid-item__img" src="./resources/images/course-data.jpg" alt="Data" />
+          <img class="grid-item__img" src="./resources/images/course-data.jpg" alt="A computer with graphs showing on its screen" />
           <div class="gid-item__description">
             <h3 class="title-third">Data</h3>
             <p class="grid-item__label">Courses</p>
@@ -172,7 +172,7 @@
         </a>
 
         <a href="#" class="grid-item column--right--top background--light">
-          <img class="grid-item__img" src="./resources/images/course-business.jpg" alt="Business" />
+          <img class="grid-item__img" src="./resources/images/course-business.jpg" alt="Chessboard with chess pawns" />
           <div class="gid-item__description">
             <h3 class="title-third">Business</h3>
             <p class="grid-item__label">Courses</p>
@@ -181,7 +181,7 @@
         </a>
 
         <a href="#" class="grid-item column--right--top background--light">
-          <img class="grid-item__img" src="./resources/images/course-marketing.jpg" alt="Marketing" />
+          <img class="grid-item__img" src="./resources/images/course-marketing.jpg" alt="A person looking at their smart watch" />
           <div class="gid-item__description">
             <h3 class="title-third">Marketing</h3>
             <p class="grid-item__label">Courses</p>
@@ -197,7 +197,7 @@
 
     <!--Grid markup for ***mobile*** starts-->
 
-  <div class="grid--mobile column">
+  <div class="grid--mobile column" role="presentation">
 
     <a class="grid-item--mobile background--dark font--light" href="#" class="list-item--mobile">Software engineering</a>
     <a class="grid-item--mobile background--dark font--light" href="#" class="list-item--mobile">Computer art</a>
@@ -215,11 +215,11 @@
 
   <!-- THESIS EXHIBIT WITH VIDEO STARTS -->
 
-  <div id="thesis-exhibit">
+  <div id="thesis-exhibit" role="presentation">
 
     <h2 class="grid__title">Thesis exhibit</h2>
 
-    <div class="row--top--center">
+    <div class="row--top--center" role="presentation">
 
       <!-- Video thumbnail starts-->
 
@@ -233,7 +233,7 @@
           </video>
         </div>
 
-        <div class="thumbnail-large__description">
+        <div class="thumbnail-large__description" role="presentation">
           <h2 class="title-third title-third--padding">Reimagine urban</h2>
           <p class="thumbnail-large__description">Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
         </div>
@@ -244,10 +244,10 @@
 
       <!-- List-items start -->
 
-      <div class="side-bar side-bar--list--no-boder column--start--space-between">
+      <div class="side-bar side-bar--list--no-boder column--start--space-between" role="presentation">
 
         <a href="#" class="list-item list-item--no-border row--middle--start">
-          <img class="list-item__image" src="./resources/images/thesis-fisma.jpg" alt="Fisma: Design and Prototype" />
+          <img class="list-item__image" src="./resources/images/thesis-fisma.jpg" alt="A person scetching a prototype on a table" />
           <div class="list-item__text-container column--start--space-between">
             <h3 class="title-third">Fisma: Design and Prototype</h3>
             <p class="list-item__text-container__text">Designer showcase of new prototype product</p>
@@ -255,7 +255,7 @@
         </a>
 
         <a href="#" class="list-item list-item--no-border row--middle--start">
-          <img class="list-item__image" src="./resources/images/thesis-now-and-then.jpg" alt="Now and then" />
+          <img class="list-item__image" src="./resources/images/thesis-now-and-then.jpg" alt="New York skyscarpers" />
           <div class="list-item__text-container column--start--space-between">
             <h3 class="title-third">Now and then</h3>
             <p class="list-item__text-container__text">Research study about New York</p>
@@ -283,9 +283,7 @@
     </nav>
   </footer>
 
-  <!--FOOTER ENDS->
-
-
+  <!--FOOTER ENDS-->
 
 
   </body>
